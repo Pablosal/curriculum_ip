@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  background-color: #feefe5;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'DM Serif Display', serif;
+}
+p {
+  font-family: 'DM Sans', sans-serif;
+}
+body,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h3{
+  border-bottom: 2px solid #00916e;
+}
+.mainHeader {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'image data data';
+}
+.mainHeader--title {
+  color: #00916e;
+  margin-bottom: 0;
+}
+.mainHeader--image {
+  grid-area: image;
+}
+.mainHeader--name {
+  grid-area: data;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-template-areas: 'sidebar content content';
+  margin-top: 20px;
+}
+.mainAside {
+  grid-area: sidebar;
+}
+.mainContent {
+  grid-area: content;
+}
+footer {
+  justify-content: space-between;
+  width: 100%;
+}
+.mainFooter--network {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100px;
+}
+.mainAside--personalInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mainAside--personalInfo > b {
+  margin-left: 15px;
+}
+h4 {
+  margin: 10px 0;
+}
+.mainHeader--image{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile--image {
+  border-radius: 50%;
+  width: 300px;
+}
